@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            background-image: url("Blue Aesthetic Best Moment Photo Collage.png");
+            background-size: 900px;
+
+        }
+
+        .birthday-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #8e24aa;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #8e24aa;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #6a1b9a;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 1px;
+        }
+
+        .form-group input {
+            width: 70%;
+            padding: 80px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fireworks-button").click(function () {
+                $("#fireworks").show();
+                setTimeout(function () {
+                    $("#fireworks").hide();
+                }, 500000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="birthday-container">
+
+        <h1>Selamat Ulang Tahun!</h1>
+        <p>Halo sayang,</p>
+        <p>Selamat ulang tahun yang ke-19! Aku harap kamu selalu bahagia dan sehat selalu.semoga di usia ini kamu dapat membahagiakan kedua orang tua dan menggapai cita cita yang kamu ingin kan meski setiap hari berubah rubah cita citanya hehehehe . Di berikan panajang umur, berbakti kepada orang tua,jaga kesehatam yee, jan jajan waee ,HEMAT HEMAT!!.</p>
+        <p>Aku sayang kamu!kadonyaa menyusull yeee kalau ingett!!!!!</p>
+        <button id="fireworks-button">tekan di sini</button>
+        <div id="fireworks" style="display:none;">
+            <img src="animasi-bergerak-ulang-tahun-0081.gif" alt="Fireworks">
+            <div class="form-group">
+                <label for="username">Harapan Kamu</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <audio id="happy-birthday" src="funny-happy-birthday-156940.mp3"></audio>
+            <script>
+                $(document).ready(function () {
+                    $("#fireworks-button").click(function () {
+                        $("#happy-birthday")[0].play();
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
